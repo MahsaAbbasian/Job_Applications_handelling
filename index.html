@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Job Application Documentation Portal</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <section class="welcome-section text-center mb-5">
+        <h1><strong>Job Application Documentation Portal</strong></h1>
+        <p>
+          This portal is designed to help you efficiently document each job
+          application by creating personalized tables for better organization
+          and clarity. Simply paste your CV into the form below to get started.
+        </p>
+      </section>
+
+      <section class="cv-form-section mb-5">
+        <form id="cvTextForm" class="text-form">
+          <div class="form-group">
+            <label for="cvText">Paste your CV in plain text:</label>
+            <textarea
+              class="form-control"
+              id="cvText"
+              name="cvText"
+              rows="10"
+              placeholder="Paste your CV here..."
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </section>
+
+      <!-- Internship Developers at Stendahls -->
+      <h3 class="mb-3">Internship Developers at Stendahls</h3>
+      <div class="table-responsive mb-5">
+        <table class="table">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">Category</th>
+              <th scope="col">Information</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-active">
+              <td><strong>Job Title</strong></td>
+              <td>Internship Developers</td>
+            </tr>
+            <tr class="table-info">
+              <td><strong>Location</strong></td>
+              <td>Gothenburg, Västra Götalands län, Sweden</td>
+            </tr>
+            <tr class="table-primary">
+              <td><strong>Company</strong></td>
+              <td>Stendahls (Digital and Creative Agency)</td>
+            </tr>
+            <tr class="table-light">
+              <td><strong>Job Description</strong></td>
+              <td>
+                <ul>
+                  <li>Dynamic learning journey with Stendahls.</li>
+                  <li>Leading full-service digital and creative agency.</li>
+                  <li>Aspires to push boundaries and stay ahead.</li>
+                  <li>Invites candidates for an immersive internship.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr class="table-warning">
+              <td><strong>Job Requirements</strong></td>
+              <td>Looking for both frontend and backend developers.</td>
+            </tr>
+            <tr class="table-light">
+              <td><strong>Application Link</strong></td>
+              <td>
+                <a
+                  href="https://stendahls.recruitee.com/o/internship-developers?source=Indeed"
+                  target="_blank"
+                  >Stendahls Internship Developers</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- LIA Praktikplats Webbutvecklare at Just Value AB -->
+      <h3 class="mb-3">LIA Praktikplats Webbutvecklare at Just Value AB</h3>
+      <div class="table-responsive mb-5">
+        <table class="table">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">Category</th>
+              <th scope="col">Information</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-active">
+              <td><strong>Job Title</strong></td>
+              <td>LIA Praktikplats Webbutvecklare</td>
+            </tr>
+            <tr class="table-info">
+              <td><strong>Location</strong></td>
+              <td>Stockholm, Falugatan 3, 113 32</td>
+            </tr>
+            <tr class="table-primary">
+              <td><strong>Company</strong></td>
+              <td>Just Value AB</td>
+            </tr>
+            <!-- Additional details for Just Value AB -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Internship Frontend Developer LIA -->
+      <h3 class="mb-3">Internship Frontend Developer LIA</h3>
+      <div class="table-responsive mb-5">
+        <table class="table">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">Category</th>
+              <th scope="col">Information</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-active">
+              <td><strong>Role</strong></td>
+              <td>Internship Frontend Developer LIA</td>
+            </tr>
+            <tr class="table-info">
+              <td><strong>Location</strong></td>
+              <td>Gothenburg</td>
+            </tr>
+            <!-- Additional details for Internship Frontend Developer LIA -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+/* Reset and Typography */
+body, html {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Sticky Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Welcome Section */
+.welcome-section h1 {
+  color: #007bff; /* Bootstrap primary color */
+  margin-bottom: 20px;
+}
+
+.welcome-section p {
+  color: #666;
+}
+
+/* Text Form Styling */
+.text-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+}
+
+.text-form textarea {
+  margin-top: 10px;
+}
+
+.text-form button {
+  margin-top: 20px;
+}
+
+/* Media Queries for Responsive Adjustments */
+@media (max-width: 768px) {
+  .welcome-section h1 {
+    font-size: 24px;
+  }
+}
