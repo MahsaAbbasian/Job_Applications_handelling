@@ -1,47 +1,71 @@
-/* Reset and Typography */
-body, html {
-  font-family: 'Arial', sans-serif;
+body,
+html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
 }
 
-/* Sticky Navbar */
+/* Styling for the navbar */
 .navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  background-color: #75a47f; /* Main theme color */
+  color: white;
 }
 
-/* Welcome Section */
-.welcome-section h1 {
-  color: #007bff; /* Bootstrap primary color */
-  margin-bottom: 20px;
+.navbar-brand,
+.navbar-links a {
+  color: white; /* Ensures text is visible against the dark background */
 }
 
-.welcome-section p {
-  color: #666;
+.navbar-links a {
+  margin-right: 10px; /* Space between links */
 }
 
-/* Text Form Styling */
-.text-form {
-  background-color: #f9f9f9;
-  padding: 20px;
+.search input[type="text"] {
+  padding: 8px;
+  margin-left: 10px; /* Space from the last link */
+  border: none;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+  outline: none;
+  background: transparent;
+  color: white;
 }
 
-.text-form textarea {
-  margin-top: 10px;
+/* Main container */
+.container {
+  padding: 20px;
+  background-color: #fff; /* Light theme for content */
 }
 
-.text-form button {
+/* Welcome section */
+.welcome-section h1 {
+  color: #75a47f; /* Theme color */
+}
+
+/* Footer styling */
+footer {
+  background-color: #75a47f;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
   margin-top: 20px;
 }
 
-/* Media Queries for Responsive Adjustments */
+footer a {
+  color: white; /* Ensures links are visible */
+}
+
+/* Media queries for responsive adjustments */
 @media (max-width: 768px) {
-  .welcome-section h1 {
-    font-size: 24px;
+  .navbar-links,
+  .search {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .search input[type="text"] {
+    width: 100%; /* Full width for smaller screens */
+    margin-top: 10px; /* Extra space */
   }
 }

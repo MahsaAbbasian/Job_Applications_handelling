@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Job Application Documentation Portal</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light sticky-top"
+      style="background-color: #75a47f !important"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color: #ffffff">JADP</a>
+        <!-- Job Application Documentation Portal -->
+        <div class="navbar-links">
+          <a href="index.html">Home</a>
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Contact</a>
+          <a href="plan.html">Plan</a>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Search..." />
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <h1 class="mb-4">Project Enhancement Plan</h1>
+
+      <h2>Overview</h2>
+      <p>
+        This document provides a roadmap for upgrading and extending the
+        capabilities of the Job Application Documentation Portal. The main
+        objectives are to improve job matching accuracy, streamline CV
+        submission, and integrate real-time job updates via APIs.
+      </p>
+
+      <h2>Current Files and Their Use</h2>
+      <ul>
+        <li>
+          <strong>index.html</strong> - Contains the main structure of the
+          application's frontend.
+        </li>
+        <li>
+          <strong>styles.css</strong> - Manages all the CSS styles for the
+          frontend.
+        </li>
+        <li>
+          <strong>scripts.js</strong> - Handles JavaScript operations including
+          API requests and dynamic content management.
+        </li>
+        <li>
+          <strong>app.py</strong> - Flask backend that processes CV data and
+          communicates with the frontend.
+        </li>
+        <li>
+          <strong>extract_cv_info.py</strong> - Script for extracting
+          information from uploaded CVs.
+        </li>
+        <li>
+          <strong>firebase.json</strong> - Configuration for Firebase, which
+          might be used for hosting and backend services.
+        </li>
+        <li>
+          <strong>package.json</strong> and <strong>package-lock.json</strong> -
+          Manage project dependencies and lock their versions.
+        </li>
+      </ul>
+
+      <h2>Proposed Enhancements</h2>
+      <h3>Step 1: Enhance CV Parsing and Matching</h3>
+      <p><strong>File:</strong> extract_cv_info.py</p>
+      <p>
+        <strong>Objective:</strong> Improve the extraction of data from CVs
+        using natural language processing to enhance job matching capabilities.
+      </p>
+      <p>
+        <strong>Tools:</strong> Integrate Python libraries such as spaCy or NLTK
+        for NLP operations.
+      </p>
+
+      <h3>Step 2: Integrate Real-time Job Updates</h3>
+      <p><strong>File:</strong> scripts.js</p>
+      <p>
+        <strong>Objective:</strong> Fetch and display real-time job postings
+        from external APIs.
+      </p>
+      <p>
+        <strong>Tools:</strong> Use JavaScript fetch API to integrate with job
+        listing services like Indeed or LinkedIn.
+      </p>
+
+      <h3>Step 3: Improve User Interface for Better Interaction</h3>
+      <p><strong>File:</strong> index.html and styles.css</p>
+      <p>
+        <strong>Objective:</strong> Redesign the user interface to include
+        notifications and job updates in a user-friendly manner.
+      </p>
+      <p>
+        <strong>Tools:</strong> Bootstrap for responsive design and JavaScript
+        for dynamic content updates.
+      </p>
+
+      <h3>Step 4: Backend Improvements for Handling Data</h3>
+      <p><strong>File:</strong> app.py</p>
+      <p>
+        <strong>Objective:</strong> Enhance backend logic to handle more complex
+        data interactions and integrate with Firebase for user authentication
+        and data storage.
+      </p>
+      <p>
+        <strong>Tools:</strong> Flask for backend logic and Firebase SDK for
+        integration with Firebase services.
+      </p>
+
+      <h3>Step 5: Setup Automated Testing and Continuous Integration</h3>
+      <p><strong>File:</strong> package.json</p>
+      <p>
+        <strong>Objective:</strong> Set up testing frameworks and continuous
+        integration to ensure code quality and stability.
+      </p>
+      <p>
+        <strong>Tools:</strong> Use eslint for linting, mocha or jest for
+        JavaScript testing, and a CI/CD platform like Jenkins or GitHub Actions.
+      </p>
+
+      <h3>Step 6: Documentation and Final Testing</h3>
+      <p><strong>File:</strong> README.md</p>
+      <p>
+        <strong>Objective:</strong> Document the new features and testing
+        strategies to ensure ease of use and maintainability.
+      </p>
+      <p><strong>Tools:</strong> Markdown for writing documentation.</p>
+
+      <h2>Additional Resources</h2>
+      <p>
+        Firebase Setup: Configure Firebase functions as per firebase.json to
+        leverage cloud functions for real-time data processing.
+      </p>
+      <p>
+        Security Measures: Update SECURITY.md to reflect any new security
+        implementations or changes.
+      </p>
+    </div>
+    <footer>
+      <p>Page created by Mahsa Abbasian. All rights reserved © 2024</p>
+      <div class="footer-links">
+        <a href="mailto:mahsa.abbasian@outlook.com">Contact Email</a> |
+        <a href="https://www.linkedin.com/in/mahsa-abbasian-a893b44b/"
+          >LinkedIn Account</a
+        >
+        |
+        <a href="https://github.com/MahsaAbbasian">GitHub Account</a>
+      </div>
+      <div class="footer-links">
+        <a href="/privacy">Privacy Policy</a> |
+        <a href="/terms">Terms of Use</a>
+      </div>
+    </footer>
+  </body>
+</html>

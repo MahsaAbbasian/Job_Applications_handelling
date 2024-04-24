@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Job Application Documentation Portal</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <header>
+      <h1>Project Overview Document</h1>
+    </header>
+    <section>
+      <h2>Project Name</h2>
+      <p>PlanCraft Kids</p>
+    </section>
+    <section>
+      <h2>Project Description</h2>
+      <p>
+        PlanCraft Kids is a smart chores app designed by parents for their kids.
+        It includes a gamified reward system to encourage children to complete
+        tasks.
+      </p>
+    </section>
+    <section>
+      <h2>Development Status</h2>
+      <p>
+        The project currently has a login and registration system in progress,
+        utilizing Firebase for authentication. There is also work underway on a
+        "Parent Dashboard" which will be further developed once the
+        authentication flow is complete.
+      </p>
+    </section>
+    <section>
+      <h2>Firebase Setup Status</h2>
+      <ul>
+        <li>
+          The google-services.json is configured with the project, indicating
+          Firebase has been connected to the project.
+        </li>
+        <li>
+          The Firebase project number is 475003133419, and the storage bucket is
+          plan-craft-kids.appspot.com.
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Code Branches</h2>
+      <ul>
+        <li>
+          code_review_error: This branch contains the latest pushed code that
+          may have unresolved errors needing review.
+        </li>
+        <li>
+          development2_parent_dashboard_wip: Work in Progress (WIP) branch for
+          developing the parent dashboard feature after the login page and
+          registration are complete.
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Authentication Implementation</h2>
+      <ul>
+        <li>
+          Sign up and login functionality with options to sign in with Google
+          and Facebook.
+        </li>
+        <li>
+          Firebase Authentication is set up to handle the user management.
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>User Interface</h2>
+      <ul>
+        <li>A login page with buttons for "Sign Up" and "Log In".</li>
+        <li>
+          A sign-up page for new users to create an account with email/password
+          or with Google/FB.
+        </li>
+        <li>
+          A login page for existing users with email/password fields and
+          Google/FB options.
+        </li>
+        <li>
+          Error handling UI, indicating when login fails (e.g., "Password
+          error").
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Immediate Next Steps</h2>
+      <ol>
+        <li>
+          Review and resolve any errors in the code_review_error branch,
+          particularly related to Firebase Authentication.
+        </li>
+        <li>
+          Ensure the user interface reflects the designs provided, matching the
+          layout, color scheme, and functionality.
+        </li>
+        <li>
+          After resolving errors, merge the changes into the
+          development2_parent_dashboard_wip branch to continue with the parent
+          dashboard development.
+        </li>
+      </ol>
+    </section>
+    <section>
+      <h2>How to Continue</h2>
+      <ol>
+        <li>Clone the repository from GitHub.</li>
+        <li>Switch to the code_review_error branch using Git commands.</li>
+        <li>
+          Review the MainActivity.kt, Color.kt, Theme.kt, and Type.kt files for
+          errors, particularly related to Firebase Authentication.
+        </li>
+        <li>
+          Use the provided designs to guide UI development and ensure a
+          consistent user experience.
+        </li>
+      </ol>
+    </section>
+    <footer>
+      <div class="footer-row">
+        <p>Page created by Mahsa Abbasian. All rights reserved © 2024</p>
+        <p>
+          Contact us at:
+          <a href="mailto:example@example.com">mahsa.abbasian@outlook.com</a>
+        </p>
+      </div>
+
+      <div class="footer-row">
+        <a href="https://www.linkedin.com/in/mahsa-abbasian-a893b44b/"
+          >Linkdin Account</a
+        >
+        <a href="https://github.com/MahsaAbbasian">github Account</a>
+        <a>github</a>
+      </div>
+      <div class="footer-links">
+        <a href="/privacy">Privacy Policy</a> |
+        <a href="/terms">Terms of Use</a>
+      </div>
+    </footer>
+  </body>
+</html>
